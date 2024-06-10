@@ -1,0 +1,20 @@
+p#par1 {
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+}
+p#par2 {
+    background-color: blue;
+    color: aliceblue;
+    font-size: 24px;
+    text-align: center;
+}
+p#par3 {
+    color: blueviolet;
+    text-decoration: underline;
+}
+span#span1 {
+    color: orangered;
+    font-weight: bold;
+    font-size: 30px;
+}
