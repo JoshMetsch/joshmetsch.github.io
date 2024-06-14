@@ -6,3 +6,76 @@
 
     Good luck, and have fun!
 */
+#license {
+    width: 700px;
+    border: 5px solid wheat;
+    border-radius: 10px;
+    padding: 24px;
+    background-color: peachpuff;
+}
+#left-side {
+    display: inline-block;
+    width: 65%;
+}
+#right-side {
+    display: inline-block;
+    width: 34%;
+}
+#id-and-expiration div {
+    display: inline-block;
+}
+#id-and-expiration {
+    margin-top: 0px;
+}
+#id-and-expiration span {
+    font-weight: bold;
+    color: red;
+}
+#personal-info #small-pic-container, #data-fields{
+    display: inline-block;
+}
+#small-pic-container img {
+    width: 100px;
+}
+#data-left, #data-right {
+    display: inline-block;
+    margin: 0px 0px 0px 15px;
+}
+#data-left span, #data-right span{
+    font-weight: bold;
+    color: red
+}
+#signature {
+    text-align: center;
+    font-family: cursive;
+    margin-top: 10px;
+}
+#right-side img {
+    width: 100%;
+}
+#donor, #real-id {
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+#donor-and-real-id {
+    text-align: center;
+}
+#content h4 {
+    background-color: blue;
+    color: azure;
+    text-align: center;
+    padding: 14.5px;
+    margin: 10px 0px 0px 0px;
+}
+#content h1 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#address {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
