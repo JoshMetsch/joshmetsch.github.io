@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+.single-column {
+    width: 50%;
+    min-width: 500px;
+    margin: 0px auto;
+}
+.light-container {
+    color: white;
+    background-color: teal;
+    padding: 48px 0px;
+}
+.green-container {
+    background-color: darkgreen;
+    color: white;
+    padding: 48px 0px;
+}
