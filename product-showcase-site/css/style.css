@@ -9,6 +9,18 @@ img {
     margin: 0px;
     width: 100%;
 }
+#c-1 {
+    width: 80%;
+    margin: 0px auto;
+}
+#c-2 {
+    width: 80%;
+    margin: 0px auto;
+}
+#c-3 {
+    width: 80%;
+    margin: 0px auto;
+}
 #logo {
     width: 20%;
     padding: 20px;
