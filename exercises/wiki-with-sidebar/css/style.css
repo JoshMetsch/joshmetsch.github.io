@@ -26,7 +26,7 @@ body {
     li {
         padding: 5px 0px;
     }
-    #m-1, #m-2 {
+    #m-1, #m-2, #m-3 {
         list-style-type: square;
     }
     .list {
@@ -44,6 +44,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 #heading-2 {
+    border-bottom: 1px solid goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+}
+#heading-3 {
     border-bottom: 1px solid goldenrod;
     font-family: 'Times New Roman', Times, serif;
 }
