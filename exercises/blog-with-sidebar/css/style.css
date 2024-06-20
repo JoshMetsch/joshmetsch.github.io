@@ -8,8 +8,8 @@ body {
 }
 #grid-layout {
     display: grid;
-    grid-template-columns: 1fr 450px 250px 1fr;
-    grid-template-areas: ". imga imga ." ". main nav .";
+    grid-template-columns: 1fr 700px 250px 1fr;
+    grid-template-areas: ". imga nav ." ". main nav .";
     h3 {
         box-shadow: 5px 5px #ff9718;
         border: 1px solid #000000;
@@ -60,4 +60,17 @@ body {
     grid-area: imga;
     width: 450px;
     margin: 0px;
+}
+#img-2, #img-3 {
+    width: 100%;
+}
+ol {
+    list-style: upper-alpha;
+    margin: 20px;
+    li{
+        line-height: 24px;
+    }
+}
+img {
+    box-shadow: 5px 5px #000000;
 }
