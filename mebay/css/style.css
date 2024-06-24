@@ -11,7 +11,7 @@ img {
 }
 #main-container {
     display: grid;
-    grid-template-columns: 114.5px 500px 550px;
+    grid-template-columns: 108.8px 500px 550px;
     grid-template-areas: "logo search-bar search-bar"
                          "img-scroll img-main main"
                          "bttm bttm main"
@@ -77,6 +77,7 @@ img {
     }
 }
 #main {
+    padding-right: 20px;
     grid-area: main;
     #item-title {
         border-bottom: 1px solid lightgray;
@@ -124,8 +125,15 @@ img {
         }
     }
     #btns {
+        padding-top: 10px;
         #po {
             font-weight: bold;
+        }
+        #bin {
+            background-color: blue;
+            a {
+                color: white;
+            }
         }
         div.btn {
             border: 1px solid blue;
@@ -135,6 +143,7 @@ img {
             border-radius: 50px;
             a {
                 text-decoration: none;
+                color: blue;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -144,6 +153,24 @@ img {
             padding: 4px;
             p {
                 padding-left: 8px;
+            }
+        }
+        #viewing {
+            display: flex;
+            align-items: center;
+            background-color: lightgray;
+            margin: 15px 40px 10px 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 12px;
+            .material-symbols-outlined {
+                background-color: white;
+                border-radius: 50%;
+                padding: 5px;
+                margin-right: 8px;
+            }
+            p span {
+                font-weight: bold;
             }
         }
     }
