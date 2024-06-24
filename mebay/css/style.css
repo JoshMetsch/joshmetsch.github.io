@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+img {
+    width: 100%;
+}
+#main-container {
+    display: grid;
+    grid-template-columns: 114.5px 500px 550px;
+    grid-template-areas: "logo search-bar search-bar"
+                         "img-scroll img-main main"
+                         "bttm bttm main"
+    ;
+}
+#logo {
+    grid-area: logo;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 15px 15px 30px;
+    span {
+        margin: -2.5px;
+    }
+    h1 {
+        display: flex;
+    }
+    #j {
+        color: red;
+    }
+    #e {
+        color: blue;
+    }
+    #b {
+        color: gold;
+    }
+    #a {
+        color: green;
+    }
+    #y {
+        color: orange;
+        margin-left: -6.5px;
+    }
+}
+#search-bar {
+    padding: 0px 10px;
+    align-items: center;
+    display: flex;
+    grid-area: search-bar;
+    border: 2px solid black;
+    margin: 30px 50px;
+    height: 45px;
+    p {
+        padding-left: 8px;
+    }
+}
+#img-scroll {
+    grid-area: img-scroll;
+    padding: 0px 10px 0px 30px;
+    #vid {
+        margin: 25px 0px;
+    }
+    #img-2, #img-3, #img-4, #img-5 {
+        margin-top: 5px;
+    }
+    #img-1, #img-2, #img-3, #img-4, #img-5 {
+        border-radius: 12px;
+    }
+}
+#img-main {
+    grid-area: img-main;
+    padding-right: 30px;
+    img {
+        border-radius: 12px;
+    }
+}
+#main {
+    grid-area: main;
+    #item-title {
+        border-bottom: 1px solid lightgray;
+        span {
+            color: blue;
+        }
+        h2 {
+            margin-top: 2px;
+        }
+        p {
+            padding-left: 8px;
+        }
+        #ag {
+            display: flex;
+            align-items: center;
+        }
+    }
+    #seller-info {
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 10px;
+        #head {
+            text-decoration: underline;
+        }
+        .info {
+            text-decoration: underline;
+        }
+        #num {
+            color: grey;
+        }
+    }
+    #payment-info {
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 10px;
+        h1 {
+            margin-bottom: 0px;
+        }
+        #p1 {
+            margin-top: 8px;
+            font-size: 14px;
+            color: gray;
+        }
+        span {
+            text-decoration: underline;
+            color: gray;
+        }
+    }
+    #btns {
+        #po {
+            font-weight: bold;
+        }
+        div.btn {
+            border: 1px solid blue;
+            margin: 15px 40px 10px 10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 50px;
+            a {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        #atw {
+            padding: 4px;
+            p {
+                padding-left: 8px;
+            }
+        }
+    }
+}
