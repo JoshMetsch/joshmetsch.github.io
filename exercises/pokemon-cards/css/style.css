@@ -1,0 +1,83 @@
+/*
+    Write your CSS for the assignment here.
+
+    You shouldn't need to modify the HTML;
+    however, you are allowed to. 
+    
+    Just be aware that you may break some
+    of the setup.css styling if you do so.
+*/
+.card-style-3 {
+    margin: 18px 20px;
+    max-width: 350px;
+    border: 15px solid gold;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    .pokemon-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2 {
+            font-size: 27px;
+            margin: 20px 17px 0px;
+        }
+        div {
+            font-size: 18px;
+            margin: 20px 18px 0px;
+        }
+        
+    }
+    img {
+        width: 285px;
+        display: flex;
+        margin: 0px auto 5px;
+        border: 5px solid goldenrod;
+    }
+    .details {
+        margin: 0px 17.5px 0px;
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 12px;
+        background: radial-gradient(at center, yellow, darkgoldenrod);
+    }
+    .attack {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 17px auto;
+        border-bottom: 2px solid black;
+        padding: 20px 0px;
+        span {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .description {
+            padding: 0px 5px;
+            justify-content: space-between;
+        }
+        .power {
+            font-size: 27px;
+            font-weight: bold;
+        }
+    }
+    .data {
+        border: 2px solid goldenrod;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin: 10px 17px 20px;
+        display: flex;
+    }
+}
+#pokemon-card-1, #pokemon-card-2 {
+    background: linear-gradient(-25deg, lightgreen, green, lightgreen);
+}
+#pokemon-card-3 {
+    background: linear-gradient(-25deg, orange, orangered, orange);
+}
+#pokemon-card-4 {
+    background: linear-gradient(-25deg, skyblue, aquamarine, skyblue);
+}
