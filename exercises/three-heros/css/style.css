@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+#hero-1 {
+    background-image: url(../images/hero-img-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+        font-size: 9vw;
+        color: goldenrod;
+        font-family: "DM Serif Display", serif;
+    }
+    h4 {
+        font-size: 2vw;
+        color: whitesmoke;
+        font-family: "DM Serif Display", serif;
+        font-style: italic;
+    }
+}
+#hero-1 .btn a {
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: green;
+    color: #ffc532;
+    text-decoration: none;
+    padding: 24px;
+    margin: 5vh 5vw 10vh 0px;
+}
+#hero-2 {
+    background-image: url(../images/camping-img.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h1 {
+        font-size: 110px;
+        color: goldenrod;
+        font-family: "DM Serif Display", serif;
+        margin-left: 20px;
+    }
+    h2 {
+        font-size: 4vw;
+        color: whitesmoke;
+        font-family: "DM Serif Display", serif;
+        font-style: italic;
+        margin-left: 20px;
+    }
+}
+#hero-2 .btn a {
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: green;
+    color: #ffc532;
+    text-decoration: none;
+    padding: 24px;
+    margin: 5vh 5vw 10vh 50px;
+}
+#hero-3 {
+    background-image: url(../images/hero-img-3.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    
+    h1 {
+        font-size: 110px;
+        color: whitesmoke;
+        font-family: "DM Serif Display", serif;
+        margin-right: 20px;
+    }
+    h4 {
+        font-size: 3vw;
+        color: whitesmoke;
+        font-family: "DM Serif Display", serif;
+        font-style: italic;
+        margin-right: 20px;
+    }
+}
+#hero-3 .btn a {
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: green;
+    color: #ffc532;
+    text-decoration: none;
+    padding: 24px;
+    margin: 5vh 50px 10vh 5vw;
+}
