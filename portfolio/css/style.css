@@ -8,6 +8,28 @@ body {
     background-color: black;
     color: white;
 }
+#card-row {
+    display: flex;
+    padding: 15px;
+}
+.card {
+    text-align: center;
+    width: 33.33%;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 15px;
+    background: linear-gradient(-50deg, #787878, #504848, #1d1c1c);
+   .btn {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 12px;
+   }
+   h2 {
+    margin-bottom: 40px;
+   }
+}
 #hero {
     background-image: url(../images/porthero.jpeg);
     height: 80vh;
