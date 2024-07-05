@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+#navbar1 {
+    display: flex;
+    padding: 45px 24px;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, #75583e, #5e4431);
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 0px 40px;
+        font-family: "Bodoni Moda SC", serif;
+        font-weight: bold;
+    }
+    #logo {
+        margin-right: auto;
+        font-family: "Bodoni Moda SC", serif;
+        font-size: 35px;
+        color: goldenrod;
+    }
+}
+#navbar2 {
+    display: flex;
+    padding: 45px 24px;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom right, #f9a909, #ae6200);
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 0px 40px;
+        font-weight: bold;
+    }
+    #logo {
+        margin-right: auto;
+        font-family: "Righteous", sans-serif;
+        font-size: 35px;
+        color: #fff7ec;
+    }
+    #btn {
+        background-color: whitesmoke;
+        padding: 10px 24px;
+        color: #f9a909;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
