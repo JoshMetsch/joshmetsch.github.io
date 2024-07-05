@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Just+Me+Again+Down+Here&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Just+Me+Again+Down+Here&family=Nothing+You+Could+Do&family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 * {
     box-sizing: border-box;
@@ -52,5 +54,81 @@ body {
         border-radius: 50px;
         font-weight: bold;
         font-size: 20px;
+    }
+}
+#navbar3 {
+    display: flex;
+    padding: 45px 24px;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom right, #181817, #1c0447);
+    align-items: center;
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 0px 40px;
+        font-weight: bold;
+    }
+    #logo {
+        margin-right: auto;
+        font-family: "Nothing You Could Do", cursive;
+        font-size: 35px;
+        color: #d0ff00;
+    }
+    #btn {
+        text-wrap: nowrap;
+        background-color: #d0ff00;
+        padding: 10px 24px;
+        color: black;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #d0ff00;
+    
+    h1{
+        margin: 0px;
+        font-size: 40px;
+        word-spacing: -5px;
+        span {
+            color: blue;
+        }
+    }
+    #h1{
+        margin-right: 10px;
+    }
+    h3 {
+        margin: 0px;
+    }
+    #h3-1 {
+        word-spacing: 58px;
+        color: #565656;
+    }
+    #h3-3 {
+        font-size: 40px;
+        color: blue;
+    }
+    #h3-2 {
+        font-size: 26px;
+        color: #565656;
+    }
+}
+#bottom-navbar {
+    display: flex;
+    padding: 5px 24px;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #4f4f4f, #444444);
+    align-items: center;
+    text-wrap: nowrap;
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 0px 40px;
+        font-weight: bold;
     }
 }
