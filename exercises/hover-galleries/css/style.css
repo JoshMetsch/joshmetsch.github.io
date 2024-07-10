@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: sans-serif;
+}
+#card-gallery-1 {
+    display: flex;
+    margin: 24px;
+    padding: 24px;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    .card {
+        border: 3px solid grey;
+        padding: 24px;
+        flex: 80px;
+        margin: 24px;
+        text-align: center;
+        transition: 
+        box-shadow 0.5s,
+        transform 0.5s
+        ;
+        &:hover {
+            box-shadow: 4px 4px 4px #00004487;
+            transform: translateY(4px);
+        }
+        &:hover a {
+            opacity: 1;
+            visibility: visible;
+            box-shadow: 4px 4px 4px #00004487;
+            transform: translateY(0px);
+        }
+        span {
+            margin-bottom: 19px;
+            height: 50px;
+            font-size: 50px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            border: 3px solid grey;
+            padding: 5px 10px;
+            border-radius: 24px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-8px);
+            transition: 
+                opacity 1s,
+                visibility 1s,
+                box-shadow 0.5s,
+                transform 1s
+            ;
+        }
+    }
+}
+#f1 h1 {
+    font-family: "Playwrite HU", cursive;
+}
+#f2 h1 {
+    font-family: "Montserrat", sans-serif;
+}
+#f3 h1 {
+    font-family: "Roboto Mono", monospace;
+}
+#f4 h1 {
+    font-family: "Raleway", sans-serif;
+}
+.font {
+    font-size: 15px;
+}
+#card-gallery-2 {
+    display: flex;
+    margin: 24px;
+    padding: 24px;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    .card {
+        border: 3px solid black;
+        padding: 24px;
+        flex: 80px;
+        height: 100%;
+        min-height: 220px;
+        min-width: 300px;
+        margin: 24px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 
+        background-color 1s,
+        color 1s,
+        box-shadow 1s,
+        transform 1s
+        ;
+        &:hover {
+            background-color: black;
+            color: white;
+            box-shadow: 4px 4px 4px #00000077;
+            transform: translateY(4px);
+            a {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        padding: 5px 10px;
+        border-radius: 20px;
+        transition: 
+        background-color 1s,
+        color 1s
+        ;
+
+    }
+}
+#card-gallery-3 {
+    display: flex;
+    margin: 24px;
+    padding: 24px;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    
+}
