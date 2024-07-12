@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body {
+    background: 
+        linear-gradient(to bottom, #ffffffdd, #ffffffdf), 
+        url(../images/bgimg2.jpg)
+    ;
+}
+#navbar {
+    background-color: #ffd7f4;
+    display: flex;
+    align-items: center;
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 24px;
+    }
+    #logo {
+        font-family: "Bowlby One", sans-serif;
+        margin-right: auto;
+        font-weight: bold;
+        font-size: 36px;
+        padding: 0px 24px;
+    }
+}
+#drop-container {
+    position: relative;
+    &:hover #drop-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+#drop-menu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: 
+    opacity 0.25s
+    ;
+    a {
+        background-color: #ffd7f4;
+        width: 100%;
+        min-width: 200px;
+        &:hover {
+            background-color: #f1a2dc;
+            color: #626262;
+        }
+    }
+}
+#nav-btns {
+    display: flex;
+    align-items: center;
+}
+#navbar .btn {
+    display: block;
+    background-color: white;
+    padding: 5px 10px;
+    margin: 24px;
+    border-radius: 24px;
+    transition: 
+    background-color 0.25s,
+    border 0.5s,
+    border-radius 0.5s,
+    box-shadow 0.5s
+    ;
+    &:hover {
+        background-color: none;
+        border: 2px solid black;
+        border-radius: 24px;
+        box-shadow: 2px 2px 2px #0000007d;
+    }
+    
+}
+#hero {
+    background: url(../images/amphero.jpg);
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-end;
+    font-size: 36px;
+    h1, h2, h3 {
+        margin-left: 50px;
+        margin-bottom: 34px;
+        color: #ff82f9e8;
+    }
+    a {
+        text-decoration: none;
+        margin: 0px 0px 34px 50px;
+        color: black;
+        background-color: white;
+        width: max-content;
+        padding: 10px 50px;
+        border-radius: 50px;
+        transition: 
+        background-color 0.5s,
+        color 0.5s
+        ;
+        &:hover {
+            background-color: #afafaf;
+            color: #ececec;
+        }
+    }
+}
+#hero2 {
+    background: url(../images/cat.jpg);
+    width: 50vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 36px;
+    margin: 24px;
+    h1, h2, h3 {
+        margin-left: 50px;
+        margin-bottom: 34px;
+        color: #000000d1;
+    }
+    a {
+        text-decoration: none;
+        margin: 0px 0px 34px 50px;
+        color: black;
+        background-color: white;
+        width: max-content;
+        padding: 10px 50px;
+        border-radius: 50px;
+        transition: 
+        background-color 0.5s,
+        color 0.5s
+        ;
+        &:hover {
+            background-color: #afafaf;
+            color: #ececec;
+        }
+    }
+}
+#hero3 {
+    background: url(../images/dog2.jpg);
+    width: 50vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 36px;
+    margin: 24px;
+    h1, h2, h3 {
+        margin-left: 50px;
+        margin-bottom: 34px;
+        color: #000000d1;
+    }
+    a {
+        text-decoration: none;
+        margin: 0px 0px 34px 50px;
+        color: black;
+        background-color: white;
+        width: max-content;
+        padding: 10px 50px;
+        border-radius: 50px;
+        transition: 
+        background-color 0.5s,
+        color 0.5s
+        ;
+        &:hover {
+            background-color: #afafaf;
+            color: #ececec;
+        }
+    }
+}
+#hero4 {
+    background: url(../images/bear.jpg);
+    width: 50vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 36px;
+    margin: 24px;
+    h1, h2, h3 {
+        margin-left: 50px;
+        margin-bottom: 34px;
+        color: #000000d1;
+    }
+    a {
+        text-decoration: none;
+        margin: 0px 0px 34px 50px;
+        color: black;
+        background-color: white;
+        width: max-content;
+        padding: 10px 50px;
+        border-radius: 50px;
+        transition: 
+        background-color 0.5s,
+        color 0.5s
+        ;
+        &:hover {
+            background-color: #afafaf;
+            color: #ececec;
+        }
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 90px;
+        margin-right: 90px;
+        h1 {
+            margin-bottom: 80px;
+            font-size: 80px;
+            font-family: "Bowlby One", sans-serif;
+        }
+        h3 {
+            margin-bottom: 80px;
+            font-size: 24px;
+        }
+        h5 {
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            background-color: #ffd7f4;
+            font-family: "Bowlby One", sans-serif;
+            text-align: center;
+            margin-top: 80px;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 50px;
+            color: black;
+            transition: 
+            background-color 0.5s,
+            color 0.5s
+            ;
+            &:hover {
+                background-color: #f1a2dc;
+                color: #0000008a;
+            }
+        }
+    }
+}
+@media screen and (max-width: 680px) {
+   #navbar {
+    flex-direction: column;
+    align-items: center;
+    #logo {
+        margin: 0px;
+    }
+   }
+   #hero {
+    width: 100vw;
+    background-position: -265px;
+    h1, h2, h3 {
+        color: #ff82f9e8;
+        margin-bottom: 10px;
+    }
+   }
+   .grid {
+    grid-template-columns: 1fr;
+    .content {
+        margin-top: 24px;
+        margin-bottom: 44px;
+    }
+   }
+   #hero2, #hero3, #hero4 {
+    width: 90%;
+    margin: 34px auto;
+   } 
+}
