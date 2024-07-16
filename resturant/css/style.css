@@ -1,4 +1,7 @@
 @import url("https://use.typekit.net/noo3emw.css");
+body {
+    background: linear-gradient(to bottom, #ffffffc0, #ffffffcd) ,url(../images/bg.jpg);
+}
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -7,6 +10,7 @@
 }
 img {
     width: 100%;
+    object-fit: cover;
 }
 #nav-content {
     display: flex;
@@ -42,10 +46,14 @@ img {
 }
 #hero {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     font-family: "indivisible", sans-serif;
     font-style: italic;
     font-size: 30px;
+    img {
+        height: 100%;
+    }
     #card-content {
         padding: 40px;
         h1, h3 {
@@ -63,9 +71,11 @@ img {
         font-style: normal;
         transition: 
         background-color 0.5s,
+        box-shadow 0.5s
         ;
         &:hover {
             background-color: #3b3b3b;
+            box-shadow: -4px 4px 4px #0000004e;
             font-style: italic;
         }
     }
@@ -73,10 +83,11 @@ img {
 #center {
     display: flex;
     flex-direction: column;
+    font-family: "indivisible", sans-serif;
     align-items: center;
     margin-top: 100px;
     img {
-        width: 600px;
+        width: 800px;
         border: 3px solid black;
         border-radius: 50px;
     }
@@ -84,7 +95,7 @@ img {
         margin-top: 20px;
     }
     h3 {
-        font-size: 30px;
+        font-size: 50px;
     }
     h5 {
         font-size: 24px;
@@ -97,9 +108,13 @@ img {
         display: block;
         padding: 10px 50px;
         border-radius: 50px;
-        transition: background-color 0.5s;
+        transition: 
+            background-color 0.5s,
+            box-shadow 0.5s
+        ;
         &:hover {
             background-color: #3b3b3b;
+            box-shadow: -4px 4px 4px #0000004e;
             font-style: italic;
         }
     }
@@ -108,11 +123,14 @@ img {
     display: flex;
     justify-content: space-around;
     background-color: black;
+    font-family: "indivisible", sans-serif;
     color: white;
     margin-top: 100px;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     h3 {
         color: #b6b6b6;
+        font-style: italic
     }
     ul {
         list-style-type: none;
@@ -121,10 +139,117 @@ img {
     li {
         margin: 5px;
     }
-   #aside {
+}
+p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#hero2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    font-family: "indivisible", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    img {
+        height: 600px;
+        width: 430px;
+    }
+    #card-content {
+        padding: 80px;
+        h1, h3 {
+            margin-bottom: 20px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-radius: 50px;
+        font-style: normal;
+        transition: 
+        background-color 0.5s,
+        box-shadow 0.5s
+        ;
+        &:hover {
+            background-color: #3b3b3b;
+            box-shadow: -4px 4px 4px #0000004e;
+            font-style: italic;
+        }
+    }
+}
+.sect {
+    background-color: black;
+    color: white;
+    font-family: "indivisible", sans-serif;
+    font-style: italic;
+    padding: 50px;
+    padding-left: 80px;
+    font-size: 54px;
+}
+.items {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    list-style-type: none;
+    font-family: "indivisible", sans-serif;
+    img {
+        height: 250px;
+        object-fit: cover;
+    }
+    .dis {
+        padding: 50px;
+    }
+    h3 {
+        font-size: 36px;
+        font-style: italic;
+    }
+    h5 {
+        padding-top: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        background-color: black;
+        padding: 10px 40px;
+        margin-top: 20px;
+        border-radius: 50px;
+        transition: 
+        background-color 0.5s,
+        box-shadow 0.5s
+        ;
+        &:hover {
+            background-color: #3b3b3b;
+            box-shadow: -4px 4px 4px #0000004e;
+            font-style: italic;
+        }
+    }
+}
+#menu-page .footer {
+    margin-top: 0px;
+}
+#nav-btns {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 90px;
-   }
+}
+@media screen and (max-width: 921px) {
+    #hero {
+        font-size: 15px;
+    }
+    #center img {
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
+    #nav-content {
+        flex-direction: column;
+    }
+    #logo {
+        margin: 0px auto;
+    }
 }
