@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to bottom, #00000091, #000000b4), url(../images/feildbg2.jpg);
+    background-size: contain;
+    color: white;
+}
+img {
+    width: 100%;
+}
+#header {
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    h1, h3, h5 {
+        padding: 5px;
+        font-family: "Graduate", serif;
+    }
+    h1 {
+        color: goldenrod;
+        font-weight: bold;
+    }
+}
+#teams {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 36px;
+    h1 {
+        margin-bottom: 60px;
+        font-family: "Graduate", serif;
+        padding: 0px 10px;
+    }
+    img {
+        height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    h3 {
+        font-family: "Graduate", serif; 
+    }
+}
+#ers h5 {
+    color: red;
+}
+#patriots h5 {
+    color: greenyellow;
+}
+#hook {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    #cta, h2, h3, h5 {
+        padding: 8px;
+    }
+    #cta a {
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        padding: 10px 40px;
+        margin: 30px;
+        border-radius: 24px;
+        display: inline-block;
+        font-weight: bold;
+        transition: 
+            background-color 0.5s,
+            box-shadow 0.5s
+        ;
+        &:hover {
+            background-color: #4c0000;
+            box-shadow: 4px 4px 4px black;
+        }
+        &:first-child {
+            background-color: navy;
+            transition: 
+            background-color 0.5s,
+            box-shadow 0.5s
+        ;
+            &:hover {
+                background-color: #000038;
+                box-shadow: 4px 4px 4px black;
+            }
+        }
+    }
+}
