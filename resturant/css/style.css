@@ -1,6 +1,10 @@
 @import url("https://use.typekit.net/noo3emw.css");
 body {
-    background: linear-gradient(to bottom, #ffffffc0, #ffffffcd) ,url(../images/bg.jpg);
+    background: 
+        linear-gradient(to bottom, #ffffffc0, #ffffffcd) ,
+        url(../images/bg2.jpg)
+    ;
+    background-size: cover;
 }
 * {
     box-sizing: border-box;
@@ -20,6 +24,8 @@ img {
 }
 .navbar {
     background-color: black;
+    border-bottom: 10px solid;
+    border-image: linear-gradient(to right, #ed1c24, #fbb416, #55b948) 1;
     a {
         text-decoration: none;
         color: white;
@@ -44,6 +50,13 @@ img {
     margin-left: 24px;
     padding: 20px;
 }
+header {
+    display: grid;
+    grid-template-rows: max-content minmax(0, 1fr);
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
 #hero {
     display: grid;
     align-items: center;
@@ -53,6 +66,7 @@ img {
     font-size: 30px;
     img {
         height: 100%;
+        
     }
     #card-content {
         padding: 40px;
@@ -85,11 +99,18 @@ img {
     flex-direction: column;
     font-family: "indivisible", sans-serif;
     align-items: center;
-    margin-top: 100px;
+    justify-content: center;
+    height: 100vh;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     img {
-        width: 800px;
+        width: 80%;
         border: 3px solid black;
-        border-radius: 50px;
+        
     }
     h3, h5, a {
         margin-top: 20px;
@@ -128,6 +149,8 @@ img {
     margin-top: 100px;
     align-items: flex-start;
     flex-wrap: wrap;
+    border-top: 10px solid;
+    border-image: linear-gradient(to right, #ed1c24, #fbb416, #55b948) 1;
     h3 {
         color: #b6b6b6;
         font-style: italic
@@ -148,16 +171,21 @@ p {
 }
 #hero2 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     font-family: "indivisible", sans-serif;
     font-style: italic;
     font-size: 30px;
     img {
         height: 600px;
-        width: 430px;
+        width: 100%;
     }
     #card-content {
-        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0px 20px;
         h1, h3 {
             margin-bottom: 20px;
         }
@@ -167,7 +195,7 @@ p {
         color: white;
         background-color: black;
         display: block;
-        padding: 10px;
+        padding: 10px 40px;
         text-align: center;
         border-radius: 50px;
         font-style: normal;
@@ -194,29 +222,32 @@ p {
 .items {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    align-items: center;
     list-style-type: none;
     font-family: "indivisible", sans-serif;
     img {
         height: 250px;
         object-fit: cover;
+        border-bottom: 2px solid black;
     }
     .dis {
-        padding: 50px;
+        height: 100%;
     }
     h3 {
         font-size: 36px;
         font-style: italic;
+        padding: 20px 0px 5px 20px;
     }
     h5 {
-        padding-top: 20px;
+        padding: 20px 0px 0px 20px;
     }
     a {
         text-decoration: none;
         color: white;
+        margin: 20px 0px 5px 20px;
         display: inline-block;
         background-color: black;
         padding: 10px 40px;
-        margin-top: 20px;
         border-radius: 50px;
         transition: 
         background-color 0.5s,
@@ -226,7 +257,13 @@ p {
             background-color: #3b3b3b;
             box-shadow: -4px 4px 4px #0000004e;
             font-style: italic;
-        }
+        }   
+    }
+    span {
+        color: #fbb416;
+    }
+    #last-img, #last-item {
+        border-bottom: none;
     }
 }
 #menu-page .footer {
@@ -239,7 +276,7 @@ p {
 }
 @media screen and (max-width: 921px) {
     #hero {
-        font-size: 15px;
+        font-size: 24px;
     }
     #center img {
         width: 100%;
@@ -251,5 +288,22 @@ p {
     }
     #logo {
         margin: 0px auto;
+    }
+}
+.dis {
+    border-bottom: 2px solid black;
+}
+#s1 {
+    border-bottom: 10px solid #ed1c24;
+}
+#s2 {
+    border-bottom: 10px solid #fbb416;
+}
+#s3 {
+    border-bottom: 10px solid #55b948;
+}
+@media screen and (max-width: 656px) {
+    .items h3 {
+        font-size: 28px;
     }
 }
