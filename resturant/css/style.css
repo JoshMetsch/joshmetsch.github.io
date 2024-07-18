@@ -83,6 +83,7 @@ header {
         text-align: center;
         border-radius: 50px;
         font-style: normal;
+        max-width: 300px;
         transition: 
         background-color 0.5s,
         box-shadow 0.5s
@@ -182,10 +183,10 @@ p {
     #card-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         height: 100%;
-        padding: 0px 20px;
+        padding: 0px 30px;
         h1, h3 {
             margin-bottom: 20px;
         }
@@ -199,6 +200,7 @@ p {
         text-align: center;
         border-radius: 50px;
         font-style: normal;
+        max-width: 300px;
         transition: 
         background-color 0.5s,
         box-shadow 0.5s
@@ -305,5 +307,25 @@ p {
 @media screen and (max-width: 656px) {
     .items h3 {
         font-size: 28px;
+    }
+    #hero2 {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 455px) {
+    #hero {
+        font-size: 18px;
+    }
+    #center h3{
+        font-size: 28px;
+    } 
+    #center h5{
+        font-size: 18px;
+    } 
+    #hero2 {
+        font-size: 18px;
+    }
+    .items h3 {
+        font-size: 20px;
     }
 }
